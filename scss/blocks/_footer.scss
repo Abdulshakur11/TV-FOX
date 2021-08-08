@@ -1,0 +1,128 @@
+.footer-music-section {
+  display: flex;
+  align-items: center;
+  width: 853px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+
+}
+
+.footer__music-icon::before {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  content: " ";
+  background-image: url("../../images/musical-note.svg");
+  margin-left: 40px;
+}
+
+.footer__audio-player {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.player__text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.player__imag::before {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-size: 65px;
+  content: " ";
+  background-image: url("../../images/music-with-you.jpg");
+  box-shadow: rgb(0 0 0 / 45%) 0px 12px 20px -10px;
+}
+
+.player__music-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+  margin-left: 10px;
+}
+
+.player__executor {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #c2b4b4;
+  margin-left: 10px;
+}
+
+.player__audio {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  height: 20px;
+  outline: none;
+
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(255, 255, 255);
+}
+
+.footer__wrapper {
+  overflow-x: hidden;
+  overflow-x: scroll;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 16px;
+  width: 940px;
+}
+
+// .footer__item {}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__item-img {
+  width: 100px;
+  height: 100px;
+  box-shadow: rgb(0 0 0 / 45%) 0px 12px 20px -10px;
+  transition: all 0.3s ease;
+}
+
+.footer__item-img:hover {
+  transform: scale(1.1);
+}
+
+.footer__item-img:active {
+  transform: scale(0.90);
+}
+
+.footer__img-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+
+.footer__img-text:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.footer__img-text:active {
+  color: blue;
+  transform: scale(0.95);
+}

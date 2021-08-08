@@ -1,0 +1,186 @@
+.fox-section {
+  background-color: #fff;
+  width: 853px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  overflow-x: scroll;
+}
+
+.fox-list {
+  width: 100%;
+  position: fixed;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 29px;
+  margin-left: 120px;
+}
+
+// .fox__item {
+
+// }
+
+.fox__item~.fox__item {
+  margin-left: 24px;
+}
+
+.fox__link--active {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.fox__link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #000;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fox__link:hover {
+  opacity: 1;
+}
+
+.fox__link:active {
+  color: #ff0000;
+}
+
+.fox__tv-wrapper {
+  display: flex;
+  width: 1200px;
+  margin-top: 50px;
+}
+
+.tv__icon::before {
+  position: fixed;
+  z-index: 15;
+  display: block;
+  width: 56px;
+  height: 100px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  content: " ";
+  background-image: url("../../images/television.svg");
+  transform: translate(40px, 65px);
+}
+
+.tv__bgcolor {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  width: 93px;
+  height: 220px;
+  background-color: #fff;
+}
+
+
+.tv__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 29px;
+  margin-left: 75px;
+  list-style-type: none;
+  padding-bottom: 50px;
+  transform: translateX(46px);
+}
+
+// .tv__item {}
+
+.tv__link {
+  text-decoration: none;
+}
+
+.tv__player-icon {
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  transform: translate(61px, -86px);
+  transition: all 0.3s ease;
+}
+
+.tv__player-icon:hover {
+  opacity: 0.8;
+
+}
+
+.tv__imag {
+  width: 700px;
+  height: 120px;
+  box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+  transition: all 0.3s ease;
+}
+
+.tv__imag:hover {
+  transform: scale(1.3);
+}
+
+.tv__imag:active {
+  transform: scale(0.95);
+ }
+
+.tv__time {
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(194, 180, 180);
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+
+.tv__name-programm {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  transition: all 0.2s ease;
+}
+
+.tv__name-programm:hover {
+  transform: scale(1.10);
+  color: #ff0000;
+}
+
+.tv__name-programm:active {
+  transform: scale(0.95);
+  color: blue;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(132, 136, 136);
+  border-radius: 10px;
+  
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( 45deg, red, yellow);
+  height: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
